@@ -7,11 +7,11 @@ class Poly < Formula
 
   if OS.mac?
     url "https://github.com/timothystiles/poly/releases/download/v0.6.0/poly_0.6.0_Darwin_x86_64.tar.gz"
-    sha256 "283153caaedcd6b7335beac686f35dd7e3f01db3933522b467ae104f797e167d"
+    sha256 "7dcf751809291b6346e1a709b13bd00f10f1f3b5f80e1fb6e25bd86297f746b3"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/timothystiles/poly/releases/download/v0.6.0/poly_0.6.0_Linux_x86_64.tar.gz"
-      sha256 "7a80548f52b5e6c1f1c591505ec0351f134199c050bfffdbf367c3b4095024d2"
+      sha256 "329ae46bace9105729b744466ca43241501c9b8127967b0a722c02033b846faa"
     end
   end
   
