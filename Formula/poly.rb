@@ -2,16 +2,16 @@
 class Poly < Formula
   desc "A command line utility for engineering organisms."
   homepage "https://github.com/TimothyStiles/poly"
-  version "0.7.0"
+  version "0.7.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/timothystiles/poly/releases/download/v0.7.0/poly_0.7.0_Darwin_x86_64.tar.gz"
-    sha256 "3d01f1fdb7d51e8512ef5d6e3f3b80a9b538491f68dc0f356b9c27249835583d"
+    url "https://github.com/timothystiles/poly/releases/download/v0.7.1/poly_0.7.1_Darwin_x86_64.tar.gz"
+    sha256 "a7e2324d5be01273b951bdfe2c62835259997ab3049c041c9b91da66d2a90a6c"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/timothystiles/poly/releases/download/v0.7.0/poly_0.7.0_Linux_x86_64.tar.gz"
-    sha256 "145092f2f20d5346dbffa5b682d291dcc28c546b3fb6910b9d2d3a5aa62a7f96"
+    url "https://github.com/timothystiles/poly/releases/download/v0.7.1/poly_0.7.1_Linux_x86_64.tar.gz"
+    sha256 "f6750718d30d1afadb81d415952d64a65249d65bb3ba1c95b7e316950fba113d"
   end
 
   depends_on "go"
