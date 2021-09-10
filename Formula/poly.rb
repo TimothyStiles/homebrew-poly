@@ -11,22 +11,22 @@ class Poly < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/timothystiles/poly/releases/download/v0.13.1/poly_0.13.1_Darwin_x86_64.tar.gz"
-      sha256 "5221294ff96cb0db2abb3bad988b3344e5c6ad683919d15d44aeb8c4f58ddf03"
+      sha256 "c292ca3d8132bc8e8b861b36b861a2ced155206ecc010260b35f8fc5bff35e30"
     end
     if Hardware::CPU.arm?
       url "https://github.com/timothystiles/poly/releases/download/v0.13.1/poly_0.13.1_Darwin_arm64.tar.gz"
-      sha256 "df234b501ec875e3f6c8ae087b4cae62b36864dae88f4c3bbb653b1ca4c9c580"
+      sha256 "ce21de04a771759c7f58bf76809d58b3db30e30d97430cecb1dca28b505a4d8d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/timothystiles/poly/releases/download/v0.13.1/poly_0.13.1_Linux_x86_64.tar.gz"
-      sha256 "721b07d7cca21bad19f018f796dc46a105cb1741fd9fe79f58cd928da4f38514"
+      sha256 "ab638b74803e569404f4d94057ecee6a9495bd2cd754466335108fa8baed79a4"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/timothystiles/poly/releases/download/v0.13.1/poly_0.13.1_Linux_arm64.tar.gz"
-      sha256 "47738576ab5609a85b1fe3f4aa2ffede3004ffcad96c145ca5b24cab90932040"
+      sha256 "c2be64c369d0f257a95e165c59668f9def41c465daa2f0f993486d82b8e6c83d"
     end
   end
 
