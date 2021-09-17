@@ -5,28 +5,28 @@
 class Poly < Formula
   desc "A command line utility for engineering organisms."
   homepage "https://github.com/TimothyStiles/poly"
-  version "0.13.5"
+  version "0.13.6"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/timothystiles/poly/releases/download/v0.13.5/poly_0.13.5_Darwin_x86_64.tar.gz"
-      sha256 "ae756749c42e08d0e47e620c5377e7e7eb227469996e08e0e47332a12d841282"
+      url "https://github.com/timothystiles/poly/releases/download/v0.13.6/poly_0.13.6_Darwin_x86_64.tar.gz"
+      sha256 "40cfa3509ab76c2d378f3ee8f6ec99b880c0709cc6b0ece38fea43be485c3e4d"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/timothystiles/poly/releases/download/v0.13.5/poly_0.13.5_Darwin_arm64.tar.gz"
-      sha256 "8541f22d568e92e34d69f6cd88030238e94ab040275c64333aaa8277b53fb16c"
+      url "https://github.com/timothystiles/poly/releases/download/v0.13.6/poly_0.13.6_Darwin_arm64.tar.gz"
+      sha256 "2f0aef0b4a430983a055478b58895b43ff1b59fb17e18e51e63d1a7bd6c7140a"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/timothystiles/poly/releases/download/v0.13.5/poly_0.13.5_Linux_x86_64.tar.gz"
-      sha256 "ee578b1b1ad10bb83315773a5065b5bdcb2c0b7cfaa4e1c8676e2378e7b6b09f"
+      url "https://github.com/timothystiles/poly/releases/download/v0.13.6/poly_0.13.6_Linux_x86_64.tar.gz"
+      sha256 "fadf6e7e2af54ce21cfaf8644e8272fe61bc9f303817dcda743cd12647eb9fda"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/timothystiles/poly/releases/download/v0.13.5/poly_0.13.5_Linux_arm64.tar.gz"
-      sha256 "5a4ecf5bfd0562f199da392d3e81dfdd9c0ccc9ec36033b5fa541bc7ec194f91"
+      url "https://github.com/timothystiles/poly/releases/download/v0.13.6/poly_0.13.6_Linux_arm64.tar.gz"
+      sha256 "6ac076d900b2b47f7ff6b6c036cb808b1bcd4e652820cb7bcec945a2b1c1d554"
     end
   end
 
