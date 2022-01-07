@@ -5,20 +5,20 @@
 class Poly < Formula
   desc "A command line utility for engineering organisms."
   homepage "https://github.com/TimothyStiles/poly"
-  version "0.17.0"
+  version "0.17.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/timothystiles/poly/releases/download/v0.17.0/poly_0.17.0_Darwin_arm64.tar.gz"
-      sha256 "b18ccb7fc7d52d6a0999c9aaeb527aceef0b19d23061a8dcaadec77cdcf9d0b5"
+      url "https://github.com/timothystiles/poly/releases/download/v0.17.1/poly_0.17.1_Darwin_arm64.tar.gz"
+      sha256 "c32b395270bcf35a5c7f62c100c970940329076fe1d4b90440d6fdb9c45f828e"
 
       def install
         bin.install "poly"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/timothystiles/poly/releases/download/v0.17.0/poly_0.17.0_Darwin_x86_64.tar.gz"
-      sha256 "b2a20dad9e0217572f1f67b08ad2d5bd2e4ec5592efd9acd40b365673d5a0e76"
+      url "https://github.com/timothystiles/poly/releases/download/v0.17.1/poly_0.17.1_Darwin_x86_64.tar.gz"
+      sha256 "7f33149471e3c9d8c4886005930d9bf0d8431472c8371daf8946be5036032a53"
 
       def install
         bin.install "poly"
@@ -28,16 +28,16 @@ class Poly < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/timothystiles/poly/releases/download/v0.17.0/poly_0.17.0_Linux_x86_64.tar.gz"
-      sha256 "2f69772261e35ff87e8e103020e77ac1e377e4441bde27aad578c0065bd7abfa"
+      url "https://github.com/timothystiles/poly/releases/download/v0.17.1/poly_0.17.1_Linux_x86_64.tar.gz"
+      sha256 "da28f26e9f8ed7291f22e6f4c3a40c88dd546e931ead3ea26d175f1d63c2c715"
 
       def install
         bin.install "poly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/timothystiles/poly/releases/download/v0.17.0/poly_0.17.0_Linux_arm64.tar.gz"
-      sha256 "143b67bb8664794c3a37763bdcfb86a9f25684ae05a70f0ef3bc4cf63a4909a6"
+      url "https://github.com/timothystiles/poly/releases/download/v0.17.1/poly_0.17.1_Linux_arm64.tar.gz"
+      sha256 "b46e3ff4870c843ec5399a71d1487f376090e52aa27a6aebef3856a9b8680fe6"
 
       def install
         bin.install "poly"
